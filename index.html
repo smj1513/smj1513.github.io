@@ -192,9 +192,9 @@
                         <ul>
                             <li>Caffeine 캐시를 락(Lock)으로 활용하여 시간이 오래 걸리는 AI 추론 요청에 대한 <strong>중복 호출 방지 및 동시성 제어</strong>
                             </li>
-                            <li>`CacheType`을 도입하여 도메인별(관광지 추천, 여행 계획 등)로 락의 생명주기(TTL)와 키 전략을 독립적으로 관리</li>
-                            <li><strong>안정적인 락 해제 전략</strong>: `AIServerErrorException` 등 예외 발생 시
-                                `RestControllerAdvice`를 통해 락을 즉시 해제하여, 요청 실패가 데드락(Deadlock)으로 이어지지 않도록 예외 처리 강화</li>
+                            <li>도메인별(관광지 추천, 여행 계획 등)로 락의 생명주기(TTL)와 키 전략을 독립적으로 관리</li>
+                            <li><strong>안정적인 락 해제 전략</strong>: AI서버 요청 과정에서 발생 예외를 Custom AIServerErrorException으로 래핑 및 예외 발생 시
+                                @ExceptionHandler를 통해 락을 즉시 해제하여, 요청 실패가 데드락(Deadlock)으로 이어지지 않도록 예외 처리 강화</li>
                         </ul>
                     </li>
                     <li><strong>확장성과 유지보수성을 고려한 범용 파일 서비스 아키텍처 설계</strong>
