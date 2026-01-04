@@ -1,10 +1,12 @@
 :root {
     --bg-color: #ffffff;
-    --card-bg: #fffcf8; /* Light warm beige */
+    --card-bg: #fffcf8;
+    /* Light warm beige */
     --card-border: #dcd6ce;
     --text-primary: #333333;
     --text-secondary: #666666;
-    --accent-color: #8c7b6e; /* Brownish gray for headers */
+    --accent-color: #8c7b6e;
+    /* Brownish gray for headers */
     --link-color: #333;
     --divider-color: #8c7b6e;
     --font-main: 'Noto Sans KR', sans-serif;
@@ -40,7 +42,7 @@ body {
     border: 1px solid var(--card-border);
     border-radius: 15px;
     padding: 40px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
 /* Profile Section */
@@ -55,11 +57,11 @@ body {
 }
 
 .profile-img {
-    width: 180px;
-    height: 220px;
+    width: 280px;
+    height: 360px;
     object-fit: cover;
-    border-radius: 50%; /* Oval shape in screenshot looks close to circle or ellipse */
-    border: 1px solid #eee;
+    border-radius: 70%;
+    border: 2px solid #fdf1dc;
 }
 
 .profile-info {
@@ -120,7 +122,8 @@ body {
 /* Section Common */
 .section-title {
     font-size: 1.4rem;
-    color: #a69076; /* Gold/Brown tone */
+    color: #a69076;
+    /* Gold/Brown tone */
     margin-bottom: 10px;
     font-weight: 700;
 }
@@ -152,7 +155,7 @@ body {
 
 .skill-category {
     font-weight: 700;
-    width: 120px;
+    width: 150px;
     color: #a69076;
     flex-shrink: 0;
 }
@@ -189,7 +192,7 @@ body {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .project-info-box {
@@ -228,7 +231,8 @@ body {
 }
 
 .highlight-text {
-    color: #d97d54; /* Orange tone for quote */
+    color: #d97d54;
+    /* Orange tone for quote */
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -252,7 +256,8 @@ body {
     border-radius: 5px;
 }
 
-.description-text h4, .project-roles h4 {
+.description-text h4,
+.project-roles h4 {
     font-size: 1.1rem;
     margin-bottom: 15px;
     color: #333;
@@ -261,18 +266,22 @@ body {
     gap: 5px;
 }
 
-.description-text ul, .project-roles ul {
-    list-style-type: none; /* Custom bullet if needed, or default disc */
+.description-text ul,
+.project-roles ul {
+    list-style-type: none;
+    /* Custom bullet if needed, or default disc */
     padding-left: 0;
 }
 
-.description-text li, .project-roles li {
+.description-text li,
+.project-roles li {
     margin-bottom: 8px;
     padding-left: 15px;
     position: relative;
 }
 
-.description-text li::before, .project-roles li::before {
+.description-text li::before,
+.project-roles li::before {
     content: "•";
     color: #333;
     position: absolute;

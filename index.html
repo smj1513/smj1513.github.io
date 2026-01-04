@@ -22,8 +22,7 @@
         <section class="card profile-card">
             <div class="profile-content">
                 <div class="profile-image-container">
-                    <img src="https://github.com/user-attachments/assets/86acb255-b04b-4bc0-894f-d72b57312579"
-                        alt="프로필 이미지" class="profile-img">
+                    <img src="assets/images/profile.jpg" alt="프로필 이미지" class="profile-img">
                 </div>
                 <div class="profile-info">
                     <div class="name-title">
@@ -117,7 +116,7 @@
             <div class="project-content">
                 <div class="project-top">
                     <div class="project-main-image">
-                        <img src="https://placehold.co/400x250/7986cb/ffffff?text=P-PliP+Service" alt="P-PliP Main">
+                        <img src="assets/images/pplip/pplip-welcome.png" alt="P-PliP Main">
                     </div>
                     <div class="project-info-box">
                         <h4>📦 프로젝트 상세</h4>
@@ -145,27 +144,21 @@
                 </div>
 
                 <div class="project-description">
-                    <p class="highlight-text">"계획은 귀찮지만, 효율적인 여행은 하고 싶은 P 성향을 위한 즉흥 여행 도우미"</p>
+                    <p class="highlight-text">"계획 세우기는 귀찮지만, 효율적인 여행은 하고 싶은 P 성향 여행자를 위한 즉흥 여행 도우미"</p>
 
                     <div class="screenshot-container">
                         <p>[실제 사용 화면]</p>
-                        <img src="https://placehold.co/800x400/7986cb/ffffff?text=Service+Screen+Example"
-                            alt="실제 사용 화면 예시">
+                        <img src="assets/images/pplip/pplip-UI.png" alt="실제 사용 화면 예시">
                     </div>
 
                     <div class="description-text">
                         <h4>📖 내용</h4>
                         <ul>
-                            <li><strong>여행 성향 맞춤 프로세스 (Dual Flow)</strong>: '극단적 P'를 위한 즉시 단일 추천과 '중도적 P'를 위한 유연한 코스 생성
-                                지원.</li>
-                            <li><strong>추천 엔진 고도화</strong>: RAGAS(LLM as Judge) 기반 평가 시스템 도입 및 <strong>HyDE +
-                                    Hybrid(Dense+Sparse) 검색</strong> 적용으로 추천 적합성 20% 향상 (0.66 → 0.79).</li>
-                            <li><strong>LangGraph 기반 에이전트 구축</strong>: 검색 품질을 스스로 평가하고 필요한 경우 쿼리를 수정하여 재검색하는
-                                <strong>Self-Correction 파이프라인</strong> 구현 (환각 최소화).
-                            </li>
-                            <li><strong>검색 최적화</strong>: Splade 임베딩 모델의 GPU 인덱싱/CPU 서빙 이원화로 속도와 성능 동시 확보.</li>
-                            <li><strong>데이터 파이프라인 개선</strong>: Qdrant Vector Store의 Payload 호환성 문제를 해결하기 위한 Custom
-                                Wrapper 개발.</li>
+                            <li>MBTI P성향(인식형) 여행자들은 크게 계획에 얽매이는 것을 싫어하는 유형과, 계획을 세우는 것이 힘들거나 어려워서 싫어하는 유형 두 가지가 존재</li>
+                            <li>이러한 P성향 여행자들은 장소를 체계적으로 찾거나 계획을 세우는 것이 어렵거나 귀찮아서 여행을 떠나는 것이 쉽지 않음</li>
+                            <li>사용자가 즉흥적으로 현재 원하는 장소를 추상적인 문장으로 입력시 주변 관광지 중 가장 적합한 장소를 찾아서 추천</li>
+                            <li>이후 추천 받은 장소 혹은 마음에 드는 장소 중 한 곳을 골라 그 주변으로 여행 계획을 자동으로 생성하는 기능 제공</li>
+                            <li>자신의 여행 경험을 공유할 수 있는 커뮤니티 기능과 여행지 리뷰 기능을 제공</li>
                         </ul>
                     </div>
                 </div>
@@ -174,20 +167,44 @@
             <div class="project-roles">
                 <h4>🙋‍♂️ 역할 및 기여 (Technical Contributions)</h4>
                 <ul>
-                    <li><strong>LLM 기반 검색 품질 평가 지표(Metric) 수립</strong>
+                    <li><strong>LLM as Judge 추천 품질 평가 지표(Metric) 수립</strong>
                         <ul>
-                            <li>기존 검색 지표(NDCG 등)의 한계를 극복하기 위해 'Category Alignment'와 'Vibe Relevance' 커스텀 메트릭 설계</li>
-                            <li>RAGAS 프레임워크를 활용하여 검색 결과의 정성적 일치도를 자동 평가하는 워크플로우 구축</li>
+                            <li>기존 추천 성능 지표(NDCG 등)의 한계를 극복하기 위해 'Category Alignment'와 'Vibe Relevance' 커스텀 메트릭 설계</li>
+                            <li>RAGAS 프레임워크를 활용하여 추천 결과의 정성적 일치도를 자동 평가하는 워크플로우 구축</li>
+                            <li>지표 설계후 개선 과정을 통해 HyDE(Hypothetical Document Embedding) 검색 기능 도입을 통해 추천 성능
+                                <strong>20%</strong>향상
+                            </li>
                         </ul>
                     </li>
                     <li><strong>LangGraph 상태 관리 및 분기 처리 구현</strong>
                         <ul>
-                            <li>단순 Chain 방식을 넘어, 검색 실패 시 재시도(Loop)나 조건부 숙소 검색(Conditional Edge) 등 복잡한 흐름 제어</li>
+                            <li>검색 실패 시 재시도(Loop), 조건부 숙소 검색(Conditional Edge)등 흐름 제어 구현</li>
+                            <li>LangGraph를 활용하여 복잡한 흐름 제어를 위한 상태 관리 및 분기 처리 구현</li>
                         </ul>
                     </li>
-                    <li><strong>하이브리드 검색을 위한 태그(Tag) 추출 시스템</strong>
+                    <li><strong>Spring Security + JWT 기반 인증 시스템 구현</strong>
                         <ul>
-                            <li>LLM을 이용해 비정형 텍스트에서 '분위기', '특징' 태그를 추출하고 이를 Sparse Embedding(Splade)에 활용하여 검색 디테일 강화</li>
+                            <li>사용자 인증을 위한 JWT 토큰 생성 및 관리</li>
+                            <li>사용자 권한 관리 및 인증된 사용자만의 정보를 조회할 수 있도록 권한 관리 구현</li>
+                        </ul>
+                    </li>
+                    <li><strong>추론 서버 부하 감소를 위한 Cache 기반 락(Lock) 구현</strong>
+                        <ul>
+                            <li>Caffeine 캐시를 락(Lock)으로 활용하여 시간이 오래 걸리는 AI 추론 요청에 대한 <strong>중복 호출 방지 및 동시성 제어</strong>
+                            </li>
+                            <li>`CacheType`을 도입하여 도메인별(관광지 추천, 여행 계획 등)로 락의 생명주기(TTL)와 키 전략을 독립적으로 관리</li>
+                            <li><strong>안정적인 락 해제 전략</strong>: `AIServerErrorException` 등 예외 발생 시
+                                `RestControllerAdvice`를 통해 락을 즉시 해제하여, 요청 실패가 데드락(Deadlock)으로 이어지지 않도록 예외 처리 강화</li>
+                        </ul>
+                    </li>
+                    <li><strong>확장성과 유지보수성을 고려한 범용 파일 서비스 아키텍처 설계</strong>
+                        <ul>
+                            <li><strong>팩토리 메서드 패턴</strong>을 적용하여 객체 생성 책임을 분리,
+                                일관된 메타데이터 관리 구현</li>
+                            <li><strong>전략 패턴</strong>을 활용하여 이미지 유형에 따라 적절한 데이터 접근 객체(DAO)를 런타임에
+                                동적으로 선택하도록 구현하여 역할 분리</li>
+                            <li><strong>배치 처리</strong>를 도입하여 다중 파일 업로드 및 메타데이터 일괄 업데이트 시 DB 커넥션 비용 최소화
+                                및 성능 최적화</li>
                         </ul>
                     </li>
                 </ul>
