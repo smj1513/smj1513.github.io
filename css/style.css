@@ -1,6 +1,6 @@
 :root {
     --bg-color: #ffffff;
-    --card-bg: #fffcf8;
+    --card-bg: #ffffff;
     /* Light warm beige */
     --card-border: #dcd6ce;
     --text-primary: #333333;
@@ -46,6 +46,10 @@ body {
 }
 
 /* Profile Section */
+.profile-card {
+    background-color: #f8f4f0;
+}
+
 .profile-content {
     display: flex;
     gap: 40px;

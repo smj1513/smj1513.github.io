@@ -147,7 +147,7 @@
                     <p class="highlight-text">"계획 세우기는 귀찮지만, 효율적인 여행은 하고 싶은 P 성향 여행자를 위한 즉흥 여행 도우미"</p>
 
                     <div class="screenshot-container">
-                        <p>[실제 사용 화면]</p>
+                        <p>[실제 사용자 화면]</p>
                         <img src="assets/images/pplip/pplip-UI.png" alt="실제 사용 화면 예시">
                     </div>
 
@@ -239,6 +239,134 @@
                         <ul>
                             <li>성능이 우수한 Splade 모델은 인덱싱 속도가 느려 실시간 서비스에 부담</li>
                             <li><strong>해결:</strong> 인덱싱은 GPU 배치 작업으로 미리 수행하고, 실시간 서빙은 CPU에서 수행하도록 파이프라인을 이원화하여 운영 효율성
+                                확보</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section: law-in-comm -->
+        <section class="card">
+            <h2 class="section-title">📝 Projects</h2>
+            <div class="divider"></div>
+
+            <div class="project-header">
+                <h3>law-in-comm - AI 어시스턴트 기반 법률 상담 커뮤니티 플랫폼 <span class="date">2025.02 ~ 2025.06</span></h3>
+            </div>
+
+            <div class="project-content">
+                <div class="project-top">
+                    <div class="project-main-image">
+                        <img src="assets/images/law-in-comm/thumbnail.png" alt="law-in-comm Main">
+                    </div>
+                    <div class="project-info-box">
+                        <h4>📦 프로젝트 상세</h4>
+                        <div class="project-details">
+                            <div class="detail-row">
+                                <span class="label">역할</span>
+                                <span class="value">백엔드 개발, 인프라 구축, AI 모델링</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">주요성과</span>
+                                <span class="value">법률 특화 임베딩 모델 개발(NDCG 7.2% 향상)
+                                    <br>
+                                    모델 Huggingface 누적 다운로드 수 1413회(2026.01.05 기준)
+
+                                </span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">GitHub</span>
+                                <span class="value"><a href="https://github.com/kit-se-capstone2/capstone2_BE_WAS"
+                                        target="_blank">https://github.com/kit-se-capstone2/capstone2_BE_WAS</a></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">HF</span>
+                                <span class="value"><a href="https://huggingface.co/kakao1513/KURE-legal-ft-v1"
+                                        target="_blank">https://huggingface.co/kakao1513/KURE-legal-ft-v1</a></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">사용기술</span>
+                                <span class="value tech-stack">Java, Spring Boot, PostgreSQL, Redis, WebSocket, AWS S3,
+                                    Docker, GitHub Actions, FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <p class="highlight-text">"AI와 법률 전문가를 연결하여 법률 서비스의 문턱을 낮추는 지능형 법률 상담 플랫폼"</p>
+                    <div class="screenshot-container">
+                        <p>[실제 사용자 화면]</p>
+                        <img src="assets/images/law-in-comm/UI.png" alt="실제 사용 화면 예시">
+                    </div>
+                    <div class="description-text">
+                        <h4>📖 내용</h4>
+                        <ul>
+                            <li><strong>RAG 기반 법률 상담</strong>: AI가 판례 기반으로 1차 답변을 제공하여 빠른 궁금증 해소</li>
+                            <li><strong>전문가 1:1 상담</strong>: WebSocket 기반 실시간 채팅으로 변호사와 심도 있는 상담 가능</li>
+                            <li><strong>커뮤니티 기능</strong>: 질문/답변 게시판을 통해 다른 사용자 및 전문가와 지식 공유</li>
+                            <li><strong>안정적인 시스템</strong>: Spring Boot 기반의 견고한 서버 및 Docker/GitHub Actions를 통한 CI/CD 구축
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-roles">
+                <h4>🙋‍♂️ 역할 및 기여 (Technical Contributions)</h4>
+                <ul>
+                    <li><strong>법률 데이터셋 구축 및 임베딩 모델 파인튜닝</strong>
+                        <ul>
+                            <li>일반 모델의 한계를 극복하기 위해 법률 도메인 특화 데이터셋 구축 및 Fine-tuning 수행</li>
+                            <li>Contrastive Learning 적용으로 Base Model 대비 NDCG@5 Score <strong>7.2%</strong> 향상</li>
+                            <li>RAG 파이프라인의 검색 정확도를 높여 신뢰성 있는 법률 정보 제공 기반 마련</li>
+                        </ul>
+                    </li>
+                    <li><strong>DDD 기반 아키텍처 설계</strong>
+                        <ul>
+                            <li><strong>전략(Strategy) 및 팩토리(Factory) 패턴</strong>을 적용하여 파일 저장소 및 처리 로직의 확장성 확보</li>
+                            <li>JPA 상속 클래스(JOINED) 전략을 사용하여 사용자(일반/변호사) 계층 구조를 효율적으로 모델링</li>
+                            <li>템플릿 메서드 패턴으로 사용자 유형별 공통 로직과 고유 행위를 깔끔하게 분리</li>
+                        </ul>
+                    </li>
+                    <li><strong>인터셉터를 활용한 WebSocket 세션 인증관리</strong>
+                        <ul>
+                            <li>STOMP 프로토콜 연결(CONNECT) 단계에서 `ChannelInterceptor`를 활용하여 JWT 토큰 유효성 검증</li>
+                            <li>메시지 브로커 앞단에서 비인가 접근을 차단하여 실시간 채팅 서비스의 보안성 강화</li>
+                        </ul>
+                    </li>
+                    <li><strong>안정적인 인프라 구축</strong>
+                        <ul>
+                            <li>Docker 컨테이너를 활용하여 개발 및 배포 환경의 일관성 보장</li>
+                            <li>GitHub Actions 기반 CI/CD 파이프라인 구축으로 배포 자동화 및 생산성 증대</li>
+                            <li>AWS S3를 연동하여 이미지 등 대용량 정적 파일의 안정적인 저장 및 서빙</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-roles">
+                <h4>🤔 고민 및 구현 (Challenges & Solutions)</h4>
+                <ul>
+                    <li><strong>임베딩 모델 학습 시 배치 사이즈 한계 극복 (Gradient Caching)</strong>
+                        <ul>
+                            <li>대조 학습(Contrastive Learning)은 Negative Sampling을 위해 큰 배치 사이즈가 중요하나, 단일 GPU(24GB) 환경의 메모리
+                                제약 발생</li>
+                            <li><strong>해결:</strong> Gradient Caching을 적용하여 하드웨어 제약을 극복하고 논리적 배치 사이즈를 512까지 확대, 성공적인 학습
+                                및 성능 향상 성공</li>
+                        </ul>
+                    </li>
+                    <li><strong>법률 용어의 특수성과 검색 정확도 문제</strong>
+                        <ul>
+                            <li>일반적인 임베딩 모델은 법률 용어의 미묘한 차이를 구분하지 못해 검색 품질이 낮음</li>
+                            <li><strong>해결:</strong> AI Hub의 법률 QA 데이터셋을 활용하여 도메인 적응 학습(Fine-tuning)을 수행, 법률 문맥 이해도 향상
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>사용자 유형별 데이터 모델링의 복잡성</strong>
+                        <ul>
+                            <li>일반 사용자와 변호사는 공통점도 있지만 서로 다른 속성과 권한을 가짐</li>
+                            <li><strong>해결:</strong> DB 차원에서는 1:1 관계의 테이블로 분리하고, 객체 차원에서는 상속 관계를 매핑하여 데이터 무결성과 코드 재사용성
                                 확보</li>
                         </ul>
                     </li>
