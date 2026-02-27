@@ -342,6 +342,46 @@ body {
     left: 0;
 }
 
+.metrics-table-wrap {
+    margin-top: 16px;
+    border: 1px solid #ece7df;
+    border-radius: 10px;
+    background-color: #fcfbf9;
+    padding: 12px;
+    overflow-x: auto;
+}
+
+.metrics-table-wrap h5 {
+    margin-bottom: 10px;
+    color: #8c7b6e;
+    font-size: 0.95rem;
+}
+
+.metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 620px;
+}
+
+.metrics-table th,
+.metrics-table td {
+    border: 1px solid #e8e3dc;
+    padding: 8px 10px;
+    font-size: 0.86rem;
+    text-align: center;
+}
+
+.metrics-table th {
+    background-color: #f5f0e8;
+    color: #5f5448;
+    font-weight: 700;
+}
+
+.metrics-table tr.metrics-highlight td {
+    background-color: #f8f3ea;
+    font-weight: 700;
+}
+
 .project-roles {
     margin-top: 30px;
     background-color: #fff;
