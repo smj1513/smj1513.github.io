@@ -145,6 +145,18 @@ body {
     text-align: justify;
 }
 
+.about-version {
+    margin-bottom: 0;
+}
+
+.about-version--hidden {
+    display: none;
+}
+
+.about-version.is-active {
+    display: block;
+}
+
 /* Skills */
 .skill-row {
     display: flex;
