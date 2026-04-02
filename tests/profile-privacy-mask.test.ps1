@@ -12,16 +12,17 @@ $checks = @(
         Ok = $indexContent -match 'id="privacy-toggle"'
     },
     @{
-        Name = "maskable text class exists in markup"
-        Ok = $indexContent -match 'class="[^"]*maskable-text'
+        Name = "maskable value class exists in markup"
+        Ok = $indexContent -match 'class="[^"]*maskable-value'
     },
     @{
-        Name = "maskable row class exists in markup"
-        Ok = $indexContent -match 'class="[^"]*maskable-row'
+        Name = "masking is scoped to birth and email"
+        Ok = ($indexContent -match 'Birth \| </span>\s*<span class="maskable-value"') -and
+             ($indexContent -match 'E-Mail \| </span>\s*<span class="maskable-value"')
     },
     @{
         Name = "masked state styles exist"
-        Ok = $cssContent -match '\.profile-card\.is-masked'
+        Ok = $cssContent -match '\.profile-card\.is-masked \.maskable-value'
     },
     @{
         Name = "toggle script adds masked state"

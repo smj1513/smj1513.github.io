@@ -22,28 +22,32 @@
         <section class="card profile-card">
             <div class="profile-content">
                 <div class="profile-image-container">
-                    <img src="assets/images/profile.jpg" alt="프로필 이미지" class="profile-img maskable-image">
+                    <img src="assets/images/profile.jpg" alt="프로필 이미지" class="profile-img">
                 </div>
                 <div class="profile-info">
                     <div class="profile-actions">
                         <button type="button" id="privacy-toggle" class="privacy-toggle-button" aria-pressed="false">
-                            개인정보 마스킹
+                            정보 가리기
                         </button>
                     </div>
                     <div class="name-title">
-                        <h1 class="maskable-text" data-mask-label="성명 비공개">성민제 <span class="eng-name">MinJe Seong</span></h1>
+                        <h1>성민제 <span class="eng-name">MinJe Seong</span></h1>
                     </div>
 
-                    <div class="quote maskable-text" data-mask-label="한 줄 소개 비공개">
-                        <p>“문제를 구조화하고 검증하며 실제 서비스로 구현하는 백엔드 개발자 성민제입니다.”</p>
+                    <div class="quote">
+                        <p>“기준을 세워 판단하는 개발자 성민제입니다.”</p>
                     </div>
 
                     <div class="contact-info">
-                        <div class="info-item maskable-row" data-mask-label="Birth | 비공개">
-                            <i class="fa-solid fa-cake-candles"></i> <span>Birth | 2000년 2월 21일</span>
+                        <div class="info-item">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <span class="info-label">Birth | </span>
+                            <span class="maskable-value">2000년 2월 21일</span>
                         </div>
-                        <div class="info-item maskable-row" data-mask-label="E-Mail | 비공개">
-                            <i class="fa-solid fa-envelope"></i> <span>E-Mail | mj022111@gmail.com</span>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="info-label">E-Mail | </span>
+                            <span class="maskable-value">mj022111@gmail.com</span>
                         </div>
                         <div class="info-item">
                             <i class="fa-brands fa-github"></i> <span>Github | <a href="https://github.com/smj1513"
@@ -126,6 +130,170 @@
                         <span class="skill-capability">GitHub Actions 기반 빌드·테스트·배포 자동화, Docker/Nginx 운영 환경 구성, AWS 리소스 연동(S3 등)과 서비스 배포/롤백 가능한 파이프라인 구축</span>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Projects Section: MOA -->
+        <section class="card">
+            <h2 class="section-title">📝 Projects</h2>
+            <div class="divider"></div>
+
+            <div class="project-header">
+                <h3>MOA - 목표 기반 자산관리 금융 페이스메이커 <span class="date">2026.02 ~ 2026.04</span></h3>
+            </div>
+
+            <div class="project-content">
+                <div class="project-top">
+                    <div class="project-main-image">
+                        <img src="assets/images/MOA/moa-main.png" alt="MOA App Entry">
+                    </div>
+                    <div class="project-info-box">
+                        <h4>📦 프로젝트 상세</h4>
+                        <div class="project-details">
+                            <div class="detail-row">
+                                <span class="label">역할</span>
+                                <span class="value">AI Lead, AI Ops Engineer</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">주요성과</span>
+                                <span class="value">가맹점명 기반 소비 범주화 F1 Macro 5% 향상, Spring AI MCP 기반 소비 코칭 구현</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">GitHub</span>
+                                <span class="value"><a href="https://github.com/smj1513/MOA-Inference" target="_blank">https://github.com/smj1513/MOA-Inference</a></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">HF</span>
+                                <span class="value"><a href="https://huggingface.co/kakao1513/merchant-consumption-category-discriminator-v3"
+                                        target="_blank">merchant-consumption-category-discriminator-v3</a></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">사용기술</span>
+                                <span class="value tech-stack">Flutter, Spring Boot, Python, FastAPI, Spring AI MCP, KoELECTRA, PyTorch, PostgreSQL, Gemini API, Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <p class="highlight-text">"기록에서 끝나는 가계부가 아니라, 목표 기준으로 소비를 해석하고 행동까지 연결해주는 금융 페이스메이커"</p>
+
+                    <div class="screenshot-container">
+                        <p>[실제 사용자 화면]</p>
+                        <div class="moa-mobile-strip">
+                            <div class="moa-mobile-shot">
+                                <span class="moa-shot-label">지출 그래프</span>
+                                <img src="assets/images/MOA/지출그래프.jpg" alt="MOA 지출 그래프 화면">
+                            </div>
+                            <div class="moa-mobile-shot">
+                                <span class="moa-shot-label">저축 이력</span>
+                                <img src="assets/images/MOA/저축이력.jpg" alt="MOA 저축 이력 화면">
+                            </div>
+                            <div class="moa-mobile-shot">
+                                <span class="moa-shot-label">AI 코치</span>
+                                <img src="assets/images/MOA/AI코칭.jpg" alt="MOA AI 코칭 화면">
+                            </div>
+                        </div>
+                        <div class="moa-reference-grid">
+                            <div class="moa-mobile-shot">
+                                <span class="moa-shot-label">여행 목표</span>
+                                <img src="assets/images/MOA/여행 목표.jpg" alt="MOA 여행 목표 화면">
+                            </div>
+                            <div class="moa-mobile-shot">
+                                <span class="moa-shot-label">목표이미지 생성</span>
+                                <img src="assets/images/MOA/목표이미지 생성.jpg" alt="MOA 목표이미지 생성 화면">
+                            </div>
+                            <div class="moa-mobile-shot moa-mobile-shot-gif">
+                                <span class="moa-shot-label">목표이미지 스케칭</span>
+                                <img src="assets/images/MOA/목표이미지 스케칭.gif" alt="MOA 목표이미지 스케칭 GIF">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-overview-card">
+                        <h5>프로젝트 개요</h5>
+                        <p>기존 가계부 서비스는 지출을 기록하고 월별 통계를 보여주는 데는 익숙하지만, 지금 속도로 가면 목표를 달성할 수 있는지, 이번 달에 얼마를 더 써도 되는지, 무엇부터 줄여야 하는지까지는 잘 답하지 못합니다.<br>MOA는 이 빈틈을 해결하기 위해 거래 데이터, 목표, 예산, 소비 흐름을 함께 연결해 “현재 재무 상태를 빠르게 이해하고 바로 행동할 수 있게 돕는” 목표 기반 자산관리 서비스를 지향했습니다.<br>전체 서비스는 Flutter 앱, Spring Boot 금융 백엔드, FastAPI AI 서버로 구성했고, 저는 이 중 AI 서버에서 가맹점 분류, 소비 분석 코칭, 이미지 생성 기능을 중심으로 설계와 구현을 맡았습니다.</p>
+                    </div>
+
+                    <div class="description-text">
+                        <h4>📖 내용</h4>
+                        <ul>
+                            <li>MOA는 단순히 소비를 기록하는 가계부가 아니라, 목표를 중심으로 소비와 저축의 흐름을 함께 보여주고 지금 어떤 선택이 필요한지까지 알려주는 목표 기반 자산관리 서비스입니다.</li>
+                            <li>사용자는 이번 주 소비 현황, 카테고리별 지출, 저축 이력, 목표 진행 상태를 한 흐름 안에서 확인하면서 어디서 많이 쓰고 있고 무엇을 조정해야 하는지 더 빠르게 판단할 수 있습니다.</li>
+                            <li>특히 목표 이미지를 생성하고 스케칭해보는 경험과 AI 코칭을 함께 붙여, 숫자만 보는 가계부를 넘어 목표를 더 구체적으로 떠올리고 행동으로 이어지게 돕는 서비스 경험을 만들고자 했습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-roles">
+                <h4>🙋‍♂️ 역할 및 기여 (Technical Contributions)</h4>
+                <ul>
+                    <li><strong>KoELECTRA + Attention Pooling 기반 가맹점 소비 카테고리 분류 모델 개발</strong>
+                        <ul>
+                            <li>NFKC 정규화, suffix noise augmentation, confidence fallback을 적용해 표기 흔들림과 분류 불안정을 줄였습니다.</li>
+                            <li>초기 베이스라인으로 <strong>CLS Pooling</strong>도 검토했지만, 결제 문자열은 짧더라도 브랜드명·지점명·불필요 접미어가 섞여 핵심 토큰의 비중이 크게 달라졌고, 이를 더 직접적으로 반영하기 위해 <strong>Attention Pooling</strong>을 채택했습니다.</li>
+                            <li>service_test F1 Macro를 <strong>0.7825 → 0.8308</strong>로 개선해 후속 소비 분석의 기준 안정성을 높였습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Spring AI MCP 기반 소비 분석 코칭 구조로 전환</strong>
+                        <ul>
+                            <li>초기 SQLToolkit 기반 멀티에이전트 구조에서 발생하던 계산 기준 불일치 문제를 줄이기 위해, Spring Boot 금융 도메인 유스케이스를 read-only MCP 서버로 노출했습니다.</li>
+                            <li>예산, 자산, 거래, 주간 분석 로직을 서비스 기준 그대로 재사용하도록 바꿔, 모델은 질문 해석과 응답 생성에 집중하고 계산은 서버 정책을 따르도록 역할을 분리했습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>LangGraph 소비 코칭 에이전트와 컨텍스트 주입 파이프라인 구현</strong>
+                        <ul>
+                            <li>MultiServerMCPClient로 Spring MCP 엔드포인트를 연결하고, 그래프 실행 시 검증된 사용자 ID와 세션 문맥을 자동 주입하도록 구성했습니다.</li>
+                            <li>스트리밍 응답과 conversation summary memory를 함께 적용해 긴 대화에서도 문맥이 흐트러지지 않도록 설계했습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>이미지 생성 relay 엔드포인트 설계</strong>
+                        <ul>
+                            <li>참조 이미지 URL 다운로드, MIME 타입 검증, base64 payload 조립을 분리해 외부 생성 API 호출 전 입력 품질을 먼저 보장했습니다.</li>
+                            <li>직접 프롬프트와 이미지를 전달하는 단순 proxy가 아니라, 실패 원인을 다운로드/검증/upstream 단계로 분리할 수 있는 relay 구조를 만들었습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>도메인 분리형 FastAPI AI 서버 구조 정리</strong>
+                        <ul>
+                            <li>chatbot, merchant classification, image generation 도메인으로 나누고, 공통 설정과 모델 로더는 app/core로 분리해 역할 경계를 명확히 했습니다.</li>
+                            <li>실험 노트북과 운영 코드를 분리해 모델 개선 실험이 서비스 코드 복잡도를 키우지 않도록 정리했습니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-roles">
+                <h4>🤔 고민 및 구현 (Challenges & Solutions)</h4>
+                <ul>
+                    <li><strong>LLM 기반 분류의 비결정성 문제</strong>
+                        <ul>
+                            <li>소비 분석은 같은 거래명에 대해 같은 분류가 안정적으로 나와야 이후 예산·주간 분석 결과도 신뢰할 수 있었습니다.</li>
+                            <li><strong>해결:</strong> LLM 대신 KoELECTRA 분류 모델을 사용하고, attention pooling과 confidence fallback을 더해 재현 가능한 분류 기준을 확보했습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>CLS Pooling과 Attention Pooling 중 어떤 표현 집계를 선택할지에 대한 고민</strong>
+                        <ul>
+                            <li>거래명은 문장 자체는 짧지만, 실제 입력에는 브랜드명, 지점명, 업종 접미어, 불필요한 특수문자 패턴이 섞여 있어 항상 <strong>CLS Pooling</strong> 하나만 보는 방식으로는 핵심 상호 토큰이 묻힐 수 있다고 판단했습니다.</li>
+                            <li><strong>해결:</strong> CLS Pooling을 기준선으로 비교한 뒤, 각 토큰이 분류에 기여하는 정도를 더 유연하게 반영할 수 있는 <strong>Attention Pooling</strong>을 선택했습니다. 여기에 정규화와 suffix noise augmentation을 함께 적용해 실제 결제 문자열의 흔들림까지 줄였습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>SQL 생성 기준과 서비스 정책 기준 불일치</strong>
+                        <ul>
+                            <li>에이전트가 직접 SQL을 생성하면 설명은 그럴듯해도, 실제 서비스의 예산/지출 계산 기준과 어긋나는 문제가 있었습니다.</li>
+                            <li><strong>해결:</strong> Spring AI MCP로 기존 금융 유스케이스를 그대로 연결해, 서비스가 이미 검증한 계산 로직을 코칭 에이전트가 재사용하도록 바꿨습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>이미지 생성 기능의 운영 안정성 확보</strong>
+                        <ul>
+                            <li>참조 이미지 URL을 바로 외부 생성 모델에 전달하는 방식은 접근 실패, 잘못된 content-type, payload 구조 문제에 취약했습니다.</li>
+                            <li><strong>해결:</strong> 다운로드, 검증, payload 조립, upstream relay를 분리한 파이프라인을 만들어 장애 지점을 빠르게 분리하고 다른 생성 모델로도 쉽게 교체할 수 있게 구성했습니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-retrospective">
+                <h4>📌 결과와 회고</h4>
+                <p>MOA에서 중요했던 건 AI 기능을 많이 붙이는 것보다, 금융 서비스의 판단 기준과 운영 구조에 맞게 AI를 배치하는 일이었습니다. 저는 분류는 재현 가능한 모델로, 소비 코칭은 서비스 로직을 재사용하는 MCP 구조로, 이미지 생성은 relay 계층으로 분리해 기능별로 다른 안정성 전략을 적용했습니다. 그 결과 MOA는 단순히 “AI가 있는 가계부”보다 목표 기반 판단을 도와주는 서비스에 더 가까워졌고, 저 역시 AI 기능은 정확도뿐 아니라 기준 일치와 운영 안정성까지 함께 설계해야 한다는 점을 깊게 배웠습니다.</p>
             </div>
         </section>
 
@@ -615,7 +783,7 @@
         if (profileCard && privacyToggleButton) {
             privacyToggleButton.addEventListener("click", () => {
                 const isMasked = profileCard.classList.toggle("is-masked");
-                privacyToggleButton.textContent = isMasked ? "개인정보 보기" : "개인정보 마스킹";
+                privacyToggleButton.textContent = isMasked ? "정보 보기" : "정보 가리기";
                 privacyToggleButton.setAttribute("aria-pressed", String(isMasked));
             });
         }

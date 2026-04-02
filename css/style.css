@@ -75,7 +75,7 @@ body {
 .profile-actions {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
 }
 
 .privacy-toggle-button {
@@ -83,9 +83,10 @@ body {
     background-color: #fffaf5;
     color: #6f5e51;
     border-radius: 999px;
-    padding: 8px 14px;
-    font-size: 0.88rem;
-    font-weight: 600;
+    padding: 5px 10px;
+    font-size: 0.76rem;
+    font-weight: 500;
+    line-height: 1.2;
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
@@ -150,53 +151,20 @@ body {
     text-decoration: underline;
 }
 
-.profile-card.is-masked .maskable-image {
-    filter: blur(10px) brightness(0.75);
+.info-label {
+    color: #555;
+    font-weight: 600;
 }
 
-.profile-card.is-masked .maskable-text,
-.profile-card.is-masked .maskable-row span {
-    color: transparent;
-    text-shadow: none;
+.maskable-value {
+    display: inline-block;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+.profile-card.is-masked .maskable-value {
+    filter: blur(4px);
+    opacity: 0.7;
     user-select: none;
-}
-
-.profile-card.is-masked .maskable-text {
-    position: relative;
-}
-
-.profile-card.is-masked .maskable-text .eng-name {
-    color: transparent;
-}
-
-.profile-card.is-masked .maskable-text::after {
-    content: attr(data-mask-label);
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #7a695b;
-    background-color: #f8efe6;
-    border: 1px solid #eadfce;
-    border-radius: 999px;
-    padding: 4px 10px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    white-space: nowrap;
-}
-
-.profile-card.is-masked .maskable-row {
-    position: relative;
-}
-
-.profile-card.is-masked .maskable-row::after {
-    content: attr(data-mask-label);
-    position: absolute;
-    left: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #7a695b;
-    font-weight: 600;
 }
 
 /* Section Common */
@@ -398,6 +366,54 @@ body {
     border: 1px solid #f1eee9;
 }
 
+.moa-mobile-strip {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    align-items: stretch;
+}
+
+.moa-mobile-shot {
+    background: linear-gradient(180deg, #fbf4eb 0%, #f6ede2 100%);
+    border: 1px solid #eadccf;
+    border-radius: 22px;
+    padding: 12px 12px 14px;
+    box-shadow: 0 8px 18px rgba(140, 123, 110, 0.08);
+}
+
+.moa-shot-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: #8c7b6e;
+    letter-spacing: 0.01em;
+}
+
+.moa-mobile-shot img {
+    width: 100%;
+    aspect-ratio: 9 / 19;
+    object-fit: contain;
+    object-position: center top;
+    border-radius: 16px;
+    border: 1px solid #f1eee9;
+    background-color: #fff;
+}
+
+.moa-reference-grid {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.moa-mobile-shot-gif img {
+    aspect-ratio: 9 / 19;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 .description-text h4,
 .project-roles h4 {
@@ -520,16 +536,6 @@ body {
         justify-content: center;
     }
 
-    .profile-card.is-masked .maskable-text::after {
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .profile-card.is-masked .maskable-row::after {
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
     .project-top {
         flex-direction: column;
     }
@@ -544,6 +550,19 @@ body {
 
     .projectree-gallery img {
         height: auto;
+    }
+
+    .moa-mobile-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .moa-reference-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .moa-mobile-shot img,
+    .moa-mobile-shot-gif img {
+        aspect-ratio: auto;
     }
 
 }
