@@ -231,7 +231,7 @@
                 <ul>
                     <li><strong>KoELECTRA + Attention Pooling 기반 가맹점 소비 카테고리 분류 모델 개발</strong>
                         <ul>
-                            <li>NFKC 정규화, suffix noise augmentation, confidence fallback을 적용해 표기 흔들림과 분류 불안정을 줄였습니다.</li>
+                            <!-- <li>NFKC 정규화, suffix noise augmentation, confidence fallback을 적용해 표기 흔들림과 분류 불안정을 줄였습니다.</li> -->
                             <li>초기 베이스라인으로 <strong>CLS Pooling</strong>도 검토했지만, 결제 문자열은 짧더라도 브랜드명·지점명·불필요 접미어가 섞여 핵심 토큰의 비중이 크게 달라졌고, 이를 더 직접적으로 반영하기 위해 <strong>Attention Pooling</strong>을 채택했습니다.</li>
                             <li>service_test F1 Macro를 <strong>0.7825 → 0.8308</strong>로 개선해 후속 소비 분석의 기준 안정성을 높였습니다.</li>
                         </ul>
