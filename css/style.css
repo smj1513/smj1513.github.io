@@ -566,3 +566,15 @@ body {
     }
 
 }
+
+/* AIG project screenshots */
+.aig-project .project-main-image { flex: 1 1 45%; min-width: 0; }
+.aig-project .project-info-box { flex: 1 1 55%; min-width: 0; }
+.aig-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 20px 0 26px; }
+.aig-gallery figure { min-width: 0; margin: 0; }
+.aig-gallery img { display: block; width: 100%; height: auto; border: 1px solid #ece7df; border-radius: 8px; }
+.aig-gallery figcaption { margin-top: 6px; color: #666; font-size: 0.82rem; }
+@media (max-width: 600px) {
+    .aig-gallery { grid-template-columns: 1fr; }
+    .aig-project .project-header h3 { flex-wrap: wrap; gap: 6px; }
+}
