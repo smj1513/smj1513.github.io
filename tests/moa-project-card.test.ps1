@@ -14,7 +14,7 @@ $checks = @(
     },
     @{
         Name = "MOA date exists"
-        Ok = $indexContent -match '2026\.02 ~ 2026\.04'
+        Ok = $indexContent -match '2026\.02 ~ 2026\.03'
     },
     @{
         Name = "MOA GitHub link exists"

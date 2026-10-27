@@ -133,13 +133,77 @@
             </div>
         </section>
 
+        <!-- Recent experience and projects -->
+        <section class="card">
+            <h2 class="section-title">💼 Experience</h2>
+            <div class="divider"></div>
+            <div class="project-header">
+                <h3>신용회복위원회 AX사업 <span class="date">2026.07 ~ 진행 중</span></h3>
+            </div>
+            <div class="project-overview-card">
+                <h5>현업의 업무 흐름에서 출발한 AI 적용</h5>
+                <p>제논의 AI 엔지니어로 참여해 상담사와 심사역이 사내 규정과 법령을 찾을 때 겪는 불편을 살펴보고, 현업 담당자와 답변에 필요한 근거와 개인정보 보호 요구사항을 구체화하고 있습니다.</p>
+            </div>
+            <div class="project-roles">
+                <h4>담당 업무</h4>
+                <ul>
+                    <li>정확한 검색어를 알아야 하거나 여러 문서와 조항을 대조해야 하는 업무에 주목해, 질문에 관련된 법령 근거를 확인할 수 있도록 에이전트의 근거 선별 과정을 분석·개선</li>
+                    <li>답변의 정확성과 근거 충실성을 점검하는 평가 지표와 기준 데이터를 구성하고, 개인정보 보호 및 근거 없는 응답을 줄이기 위한 가드레일 개발</li>
+                    <li>외부 시험 환경의 149개 문항 비교에서 근거 조문 F1 61.6%에서 73.9%로 개선. 내부망 적용 후 재검증 필요</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">📝 Projects</h2>
+            <div class="divider"></div>
+            <div class="project-header">
+                <h3>AIG - AI 활용 역량을 기르는 코딩 플랫폼 <span class="date">2026.04 ~ 2026.05</span></h3>
+            </div>
+            <div class="project-overview-card">
+                <h5>프로젝트 개요</h5>
+                <p>AI와 함께 실무형 코딩 과제를 수행하고, AI 활용 과정과 에이전트 하네스 설계에 대한 피드백을 받는 플랫폼입니다. AI 추론 서버와 코딩 에이전트, 평가 기능 개발을 담당했습니다.</p>
+            </div>
+            <div class="project-roles">
+                <h4>담당 업무</h4>
+                <ul>
+                    <li>FastAPI·LangGraph·DeepAgents를 활용한 세션별 코딩 에이전트 실행 환경 구성</li>
+                    <li>DB 기반 가상 파일 시스템과 워크트리로 에이전트의 파일 읽기·수정 및 변경 이력을 관리하고 원본 직접 수정 제한</li>
+                    <li>도구 호출과 파일 변경 추적, 세션별 하네스 설정 및 평가 에이전트와 RAGAS 기반 평가 흐름 구현</li>
+                    <li>Docker 샌드박스 실행과 GitLab CI/CD 배포 환경 구성</li>
+                </ul>
+                <p><a href="https://github.com/smj1513/AIG-Inference" target="_blank" rel="noopener noreferrer">AIG 추론 서버 GitHub</a></p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">📝 Projects</h2>
+            <div class="divider"></div>
+            <div class="project-header">
+                <h3>3D Gaussian Splatting 기반 영상 3D 재구성 <span class="date">2026.04</span></h3>
+            </div>
+            <div class="project-overview-card">
+                <h5>프로젝트 개요</h5>
+                <p>3D Gaussian Splatting의 작동 원리를 이해하기 위해 촬영 영상으로부터 3차원 장면을 재구성하는 과정을 구성했습니다.</p>
+            </div>
+            <div class="project-roles">
+                <h4>진행 내용</h4>
+                <ul>
+                    <li>영상에서 다양한 각도의 이미지를 추출하고 카메라 위치와 공간의 점을 계산해 3D 장면의 기초 데이터를 생성</li>
+                    <li>생성한 데이터로 3D 장면을 학습하고 다른 시점의 영상을 만드는 흐름 구성</li>
+                    <li>조건을 조정하며 처리 과정을 확인할 수 있도록 실행 환경과 노트북 정리</li>
+                </ul>
+                <p><a href="https://github.com/smj1513/3D_Gaussian_Splatting" target="_blank" rel="noopener noreferrer">프로젝트 GitHub</a></p>
+            </div>
+        </section>
+
         <!-- Projects Section: MOA -->
         <section class="card">
             <h2 class="section-title">📝 Projects</h2>
             <div class="divider"></div>
 
             <div class="project-header">
-                <h3>MOA - 목표 기반 자산관리 금융 페이스메이커 <span class="date">2026.02 ~ 2026.04</span></h3>
+                <h3>MOA - 목표 기반 자산관리 금융 페이스메이커 <span class="date">2026.02 ~ 2026.03</span></h3>
             </div>
 
             <div class="project-content">
@@ -756,6 +820,29 @@
             <div class="project-retrospective">
                 <h4>📌 결과와 회고</h4>
                 <p>이 프로젝트의 핵심 과제는 법률 도메인에서 범용 임베딩의 한계를 넘어 검색 신뢰도를 확보하는 것이었습니다. 그러나 실제로 BI-Encoder 구조의 임베딩 모델 성능의 개선은 성공했지만, 실제 RAG 파이프라인에 개선된 임베딩 모델을 적용하였을 때 실질적인 성능 개선을 체감하기는 어려움이 있었습니다. BI-Encoder 기반의 모델을 수치적으로 개선하더라도 여전히 상위에 관련없는 문서가 검색되는 결과가 나타나는 문제가 있었기에, 임베딩 모델을 실제 RAG 파이프라인에 추가하였을 때의 검색성능을 평가하는 기준을 세우고, Cross Encoder 기반의 ReRanker 모델을 도입하거나, HyDE와 같은 고도화된 검색 기법을 적용하여 비교 분석해보고 싶었습니다.</p>
+            </div>
+        </section>
+        <section class="card">
+            <h2 class="section-title">🤝 Education &amp; Activities</h2>
+            <div class="divider"></div>
+            <div class="project-roles">
+                <h4>삼성 청년 SW·AI 아카데미 14기 <span class="date">2025.07 ~ 2026.05</span></h4>
+                <ul>
+                    <li>Java·자료구조·알고리즘과 웹 개발을 학습하고 Spring Boot·Vue.js 기반 애플리케이션 개발</li>
+                    <li>이미지 처리·언어 모델·AI 에이전트를 학습하고, LLM 에이전트 흐름 설계와 실행 추적, RAG 평가 및 모델 학습을 프로젝트에 적용</li>
+                </ul>
+                <h4>자료구조 TA 멘토 <span class="date">2024.03 ~ 2024.06</span></h4>
+                <ul>
+                    <li>약 40명의 학생을 지원하며 이해 수준에 맞춰 예시로 설명하고, 1:1 코드 리뷰와 비대면 질의응답을 통해 스스로 오류를 찾도록 도움</li>
+                </ul>
+                <h4>서버관리장학생 <span class="date">2024.02 ~ 2024.12</span></h4>
+                <ul>
+                    <li>실습용 서버와 장비를 관리하며 학생의 장비 대여·회수와 사용 중 문제 해결 지원</li>
+                </ul>
+                <h4>학부연구생</h4>
+                <ul>
+                    <li>폐쇄형 SNS 개발에서 의뢰인과 주 단위로 만나 요구사항을 조율하고 프로토타입을 시연하며 기능을 구체화</li>
+                </ul>
             </div>
         </section>
     </main>
