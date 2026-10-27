@@ -112,8 +112,15 @@
                 <div class="skill-row">
                     <span class="skill-category">AI Platform</span>
                     <div class="skill-content">
-                        <span class="skill-items">Flowise, MCP, Langfuse, Weaviate, vLLM</span>
-                        <span class="skill-capability">AI 워크플로우와 모델 서빙·벡터 검색·도구 연동 구조 이해, 실행 추적과 답변 평가를 통한 통합 AI 서비스 품질 관리</span>
+                        <span class="skill-items">Flowise, MCP, FastAPI, vLLM</span>
+                        <span class="skill-capability">Flowise 워크플로우와 모델 서빙·외부 도구의 연결 흐름 파악, MCP 기반 대화 이력 저장·조회 및 업무 영역별 도구 연동, FastAPI 기반 평가 API 구현과 모델 서빙 호출</span>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-category">AI Quality</span>
+                    <div class="skill-content">
+                        <span class="skill-items">RAGAS, Langfuse, LLM-as-a-Judge</span>
+                        <span class="skill-capability">정답과 검색 근거를 활용한 답변 정확성·충실성·인용 정밀도 평가, LLM 판정과 점수 계산을 분리한 평가 기능 구현, 실행 추적으로 검색·생성 단계별 오류와 병목 분석</span>
                     </div>
                 </div>
                 <div class="skill-row">
@@ -126,8 +133,8 @@
                 <div class="skill-row">
                     <span class="skill-category">NoSQL, Vector DB</span>
                     <div class="skill-content">
-                        <span class="skill-items">Redis, FAISS, Qdrant</span>
-                        <span class="skill-capability">Redis 캐시/락으로 동시성 제어 및 추론 중복 호출 방지, Qdrant 기반 Dense+Sparse+Hybrid 검색 설계, 벡터 인덱스/메타데이터 호환성 이슈 해결</span>
+                        <span class="skill-items">Redis, FAISS, Qdrant, Weaviate</span>
+                        <span class="skill-capability">Redis 캐시·세션 이력 관리, Qdrant 기반 벡터·키워드 결합 검색 설계와 메타데이터 호환성 개선, Weaviate와 임베딩 모델을 연동한 기관명 검색 예제 구현</span>
                     </div>
                 </div>
                 <div class="skill-row">
@@ -151,7 +158,7 @@
                 <h5>사업 개요</h5>
                 <p>신용회복위원회의 상담·심사 업무에 생성형 AI와 데이터 기반 서비스를 적용하기 위한 약 63억 원 규모의 사업입니다. 사내 규정과 법령, 업무 정보를 찾아 답변하는 AI 서비스와 이를 운영하기 위한 모델·데이터·평가 기반을 함께 구축합니다.</p>
                 <p>상담사와 심사역은 필요한 규정의 정확한 이름이나 검색어를 알아야 하고, 여러 문서와 조항을 직접 대조해 답변의 근거를 확인해야 합니다. 이 과정을 지원하기 위해 현업 담당자와 필요한 답변 형태, 근거 제시 방식, 개인정보 보호 기준을 논의하며 기능을 구체화했습니다.</p>
-                <p><strong>소속 및 역할:</strong> 제논 · AI 엔지니어 | 대화 관리, AI 답변 평가·피드백, 개인정보 보호 가드레일 개발 및 법령 답변 개선</p>
+                <p><strong>소속 및 역할:</strong> 제논 · AI 엔지니어 | 대화 관리, AI 답변 평가·피드백, 개인정보 보호 가드레일 및 법령 에이전트 개발</p>
             </div>
             <div class="project-roles">
                 <h4>🤝 상담 사례를 통한 현업 시연</h4>
@@ -164,7 +171,7 @@
                 <h4>🏗️ 사업 구조와 담당 범위</h4>
                 <ul>
                     <li><strong>사업 전체:</strong> 업무별 AI 에이전트와 문서 검색, 모델 서빙, 데이터·모델 관리, 답변 평가를 통합한 플랫폼을 구축합니다.</li>
-                    <li><strong>담당 범위:</strong> Flowise 워크플로우, 모델 서빙, 벡터 검색과 MCP 도구의 연결 흐름을 살피고, 대화 문맥 관리와 평가·가드레일 기능을 구현했습니다. 법령 에이전트는 기존 검색·선별 흐름을 분석해 답변 근거를 개선했습니다.</li>
+                    <li><strong>담당 범위:</strong> Flowise 워크플로우, 모델 서빙, 벡터 검색과 MCP 도구의 연결 흐름을 살피고, 대화 문맥 관리와 평가·가드레일 기능을 구현했습니다. 법령 에이전트의 검색·조문 선별 과정을 분석하고 답변에 필요한 근거를 선택하는 기능을 개발했습니다.</li>
                 </ul>
             </div>
             <div class="project-roles">
@@ -176,7 +183,7 @@
                 </ul>
             </div>
             <div class="project-roles">
-                <h4>🔍 법령 답변의 근거 선별 개선</h4>
+                <h4>🔍 법령 에이전트 개발</h4>
                 <ul>
                     <li>질문에 직접 필요하지 않은 법령 조문이 답변에 함께 인용되는 문제를 확인하고, 검색부터 조문 선별, 답변 생성까지 단계별 결과를 비교해 원인을 분석했습니다.</li>
                     <li>질문의 답이 직접 담긴 조문을 우선하도록 선별 기준을 조정하고, 기관의 설립 목적이나 제도 설명에 필요한 조문도 빠지지 않도록 보완했습니다. 모든 근거가 제거될 때는 앞 단계에서 선정한 근거를 보존하도록 처리했습니다.</li>
